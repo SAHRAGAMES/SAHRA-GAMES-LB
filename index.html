@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahra Games - El Tijara El Lebneniye Pre-Order</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F7F3; /* Light Cream/Sand */
+        }
+        /* Custom Colors based on Lebanese Earth Tones */
+        .bg-sand { background-color: #EFEBD8; } /* Light Beige/Sand Base */
+        .text-cedar { color: #5C4033; } /* Deep Brown/Cedar for text */
+        .bg-cedar { background-color: #5C4033; }
+        .bg-red-accent { background-color: #A32832; } /* Deep Red/Burgundy Accent */
+        .text-red-accent { color: #A32832; }
+        .bg-gold-accent { background-color: #DAA520; } /* Gold/Brass accent */
+        .hover\:bg-gold-dark:hover { background-color: #C1921D; }
+        
+        .shadow-text { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+
+        /* Custom Box Container for visuals */
+        .box-mockup {
+            width: 131px; /* Custom Width */
+            height: 93px; /* Custom Length */
+            padding-bottom: 27%; /* Aspect Ratio for 35mm height visualization */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header / Navigation Bar -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <!-- Logo & Brand Name -->
+            <div class="flex items-center space-x-2">
+                <!-- Sahra Games Logo Placeholder (Moon/Star) -->
+                <div class="w-8 h-8 bg-gold-accent rounded-full flex items-center justify-center shadow-lg">
+                    <svg class="w-5 h-5 text-cedar" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 2.5a7.5 7.5 0 017.5 7.5c0 4.142-3.358 7.5-7.5 7.5s-7.5-3.358-7.5-7.5A7.5 7.5 0 0110 2.5zM10 0a10 10 0 100 20A10 10 0 0010 0zM7.5 10a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0zM10 10a.5.5 0 00-.5.5v3a.5.5 0 001 0v-3a.5.5 0 00-.5-.5z"></path>
+                    </svg>
+                </div>
+                <span class="text-xl font-bold text-cedar">Sahra Games</span>
+            </div>
+            
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="#product" class="hover:text-red-accent transition">Product</a>
+                <a href="#rules" class="hover:text-red-accent transition">The Rules</a>
+                <a href="#company" class="hover:text-red-accent transition">About LGM</a>
+            </nav>
+
+            <!-- Pre-Order Button in Header -->
+            <a href="#order-section" class="bg-red-accent text-white py-2 px-4 rounded-full font-semibold shadow-lg hover:bg-red-700 transition duration-300 transform hover:scale-105">
+                Pre-Order Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+
+        <!-- Hero Section: Product and Offer -->
+        <section id="product" class="bg-sand py-16 md:py-24 text-cedar border-b border-gray-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-10">
+                
+                <!-- Text and Call to Action -->
+                <div class="md:w-1/2 space-y-6 text-center md:text-left">
+                    <h1 class="text-4xl sm:text-6xl font-extrabold leading-tight shadow-text">
+                        EL TIJARA EL LEBNENIYE
+                    </h1>
+                    <h2 class="text-2xl sm:text-3xl font-light italic text-red-accent">
+                        "Gold buys the goods. **Wasta** opens the doors: the true Lebanese market."
+                    </h2>
+                    
+                    <div class="bg-white text-gray-900 p-4 rounded-xl shadow-2xl inline-block max-w-full md:max-w-sm mx-auto md:mx-0 border-4 border-gold-accent">
+                        <p class="text-2xl font-bold mb-1">
+                            LIMITED 1st EDITION PRE-ORDER
+                        </p>
+                        <p class="text-4xl font-extrabold text-cedar">
+                            $15.00 USD
+                        </p>
+                        <p class="text-sm mt-2 text-gray-600">
+                            (Only 100 units in the first batch—shipping for the holidays!)
+                        </p>
+                    </div>
+
+                    <!-- Main Pre-Order Button -->
+                    <div id="order-section" class="pt-4">
+                        <button onclick="document.getElementById('preorder-form').scrollIntoView({ behavior: 'smooth' });"
+                            class="bg-red-accent text-white py-4 px-10 rounded-full text-xl font-bold shadow-2xl hover:bg-red-700 transition duration-300 transform hover:scale-105">
+                            SECURE YOUR COPY NOW ↴
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Image Placeholder (Your Box/Cards) -->
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="w-80 h-auto bg-cedar box-mockup rounded-2xl shadow-2xl border-4 border-gold-accent p-4 flex flex-col justify-center items-center transform rotate-3 hover:rotate-0 transition duration-500">
+                        <p class="text-white text-xl font-bold">Premium Rigid Box</p>
+                        <p class="text-yellow-400 text-sm mt-2">131mm x 93mm x 35mm</p>
+                        <img src="https://placehold.co/200x300/DAA520/5C4033?text=Sahra+Games+Logo" alt="Game Box Placeholder" class="w-2/3 mt-4 rounded-lg">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Product Features / Core Mechanics -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-cedar mb-12">
+                    Why This Isn't Just Another Card Game
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Feature 1: The Wasta Mechanic -->
+                    <div class="bg-sand p-6 rounded-xl shadow-lg border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
+                        <svg class="w-10 h-10 text-red-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-2 text-cedar">WASṬA: The Power Play</h3>
+                        <p class="text-gray-700">Influence is currency. Use the Wasta Action Card to cancel opponent actions, secure trades, and bypass conventional rules. It's the ultimate tool for Lebanese-style negotiation.</p>
+                    </div>
+
+                    <!-- Feature 2: The Hard Stop -->
+                    <div class="bg-sand p-6 rounded-xl shadow-lg border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
+                        <svg class="w-10 h-10 text-red-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-semibold mb-2 text-cedar">The Hard Stop at 150</h3>
+                        <p class="text-gray-700">Precision wins. You must hit **EXACTLY 150 points** to win. Overshoot, and you risk a costly Emergency Dump Trade just to reset your score. Rewards strategy, punishes greed.</p>
+                    </div>
+
+                    <!-- Feature 3: The Sarsour Chaos -->
+                    <div class="bg-sand p-6 rounded-xl shadow-lg border-t-4 border-red-accent hover:shadow-2xl transition duration-300">
+                        <svg class="w-10 h-10 text-red-accent mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.657 0 3 .895 3 2s-1.343 2-3 2-3-.895-3-2 1.343-2 3-2zM4 14s.5-2 2-2 1.5 2 2 2m0-8s.5-2 2-2 1.5 2 2 2m-2 2s.5-2 2-2 1.5 2 2 2m-2 2s.5-2 2-2 1.5 2 2 2"></path></svg>
+                        <h3 class="text-xl font-semibold mb-2 text-cedar">Sudden Social Chaos</h3>
+                        <p class="text-gray-700">Cards like **Sarsour** (Cockroach) and **Maniak** (Swap Hands) turn the table into a frenzy of laughter and betrayal. Every turn is high-stakes and highly social.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Rules Overview -->
+        <section id="rules" class="py-16 bg-sand border-t border-gray-300">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-cedar mb-8 text-center">
+                    The Rules in the Souq (Market)
+                </h2>
+                <div class="bg-white p-8 rounded-2xl shadow-xl border-4 border-cedar">
+                    <p class="text-lg mb-4 italic text-gray-700">
+                        The game uses a rigid, ascending resource chain ($\text{Stone} \rightarrow \text{Wood} \rightarrow \text{Food} \rightarrow \text{Gold} \rightarrow \text{Treasure}$) and social negotiation.
+                    </p>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3 text-red-accent">1. Bank Trade Ratios</h3>
+                    <p class="mb-4 text-gray-700">
+                        The Bank charges a high tax to upgrade your resources in sequence (e.g., Wood $\rightarrow$ Food):
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 ml-4 text-gray-700">
+                        <li>**Stone to Wood:** Trade 4 Stone for 1 Wood ($\mathbf{4:1}$ ratio).</li>
+                        <li>**All Others (Wood, Food, Gold):** Trade 3 cards for 1 card of the next tier ($\mathbf{3:1}$ ratio).</li>
+                        <li>**Emergency Dump:** Special rule to sacrifice Gold/Treasure to the bank to fix an overshot score (over 150 pts).</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-semibold mt-6 mb-3 text-red-accent">2. Domestic Trade</h3>
+                    <p class="mb-4 text-gray-700">
+                        Player-to-player trade is **fully negotiable** (the Souq). This is the only way to downgrade resources (e.g., Food for Wood) and avoid the Bank's high tax.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pre-Order Form -->
+        <section class="py-16 bg-cedar" id="preorder-form">
+            <div class="max-w-md mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white p-8 rounded-xl shadow-2xl text-center border-4 border-gold-accent">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                        Secure Your Limited 1st Edition
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Only 100 units are being produced locally in Beirut for the holiday season. Lock in your copy now for **$15 USD**.
+                    </p>
+                    
+                    <form onsubmit="handlePreorder(event)">
+                        <div class="mb-4">
+                            <input type="text" id="name" placeholder="Your Full Name" required 
+                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-red-accent focus:border-red-accent transition duration-150 shadow-sm">
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" id="email" placeholder="Your Email Address" required 
+                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-red-accent focus:border-red-accent transition duration-150 shadow-sm">
+                        </div>
+                        
+                        <div id="message-box" class="bg-yellow-100 text-yellow-800 p-3 rounded-lg mb-4 hidden" role="alert"></div>
+
+                        <button type="submit" 
+                            class="w-full bg-gold-accent text-cedar py-3 rounded-full text-xl font-bold shadow-xl hover:opacity-90 transition duration-300 transform hover:scale-[1.02]">
+                            PRE-ORDER FOR $15.00
+                        </button>
+                        <p class="text-xs text-gray-500 mt-2">
+                            You will be redirected to the secure payment portal after submitting.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer / Company Info -->
+        <footer id="company" class="bg-gray-900 text-white py-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="flex justify-center items-center space-x-3 mb-4">
+                     <span class="text-3xl font-bold text-gold-accent">Sahra Games</span>
+                </div>
+                <p class="text-gray-400">
+                    A creation of **LEBANESE GAME MAKERS (LGM)**. Dedicated to bringing high-quality, strategically rich, and culturally vibrant games to your table.
+                </p>
+                <div class="mt-4 pt-4 border-t border-gray-700">
+                    <p class="text-sm text-gray-500">© 2025 Sahra Games. All rights reserved. | Contact: [YOUR SUPPORT EMAIL]</p>
+                    <p class="text-sm text-gray-500 mt-1">Tag us on Instagram: @sahragames.lb</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Simple JavaScript function to simulate the pre-order process
+        function handlePreorder(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const msgBox = document.getElementById('message-box');
+
+            if (name && email) {
+                // *** IN A LIVE SITE, REPLACE THIS SECTION WITH YOUR PAYMENT GATEWAY REDIRECT ***
+                // Example: window.location.href = "https://your-stripe-checkout.com/product_id_here";
+                
+                msgBox.classList.remove('hidden', 'bg-yellow-100');
+                msgBox.classList.add('bg-green-100', 'text-green-800');
+                msgBox.innerHTML = `**Success, ${name}!** Your pre-order is reserved. Please imagine being redirected to the \$15 payment portal now. We will contact you at ${email}!`;
+
+                // Simulate form reset
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                
+                setTimeout(() => {
+                    msgBox.classList.add('hidden');
+                }, 8000);
+            }
+        }
+    </script>
+</body>
+</html>
